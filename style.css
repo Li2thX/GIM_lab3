@@ -1,0 +1,45 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Шрифт Google Fonts */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-family: 'Merriweather', serif; /* Нестандартний шрифт */
+}
+
+.about {
+    padding: 20px;
+}
+
+.image {
+    width: 100%;
+    max-width: 400px;
+    animation: spin 5s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 0.8rem;
+}
