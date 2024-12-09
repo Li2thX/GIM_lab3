@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif; /* Шрифт Google Fonts */
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f9;
@@ -15,7 +15,7 @@ header {
 
 .title {
     font-size: 2.5rem;
-    font-family: 'Merriweather', serif; /* Нестандартний шрифт */
+    font-family: 'Merriweather', serif;
 }
 
 .about {
@@ -28,13 +28,52 @@ header {
     animation: spin 5s infinite linear;
 }
 
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.initials-section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #e8e8f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.initials-table {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+
+.initials-table th,
+.initials-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.initials-table th {
+    background-color: #333;
+    color: #fff;
+}
+
+.initials-table td {
+    background-color: #fff;
+}
+
+#add-row-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#add-row-btn:hover {
+    background-color: #555;
 }
 
 footer {
@@ -42,4 +81,13 @@ footer {
     color: #fff;
     padding: 10px 0;
     font-size: 0.8rem;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
